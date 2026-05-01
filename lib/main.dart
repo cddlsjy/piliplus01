@@ -36,6 +36,7 @@ import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -295,7 +296,7 @@ class MyApp extends StatelessWidget {
       getPages: Routes.getPages,
       defaultTransition: Pref.pageTransition,
       shortcuts: <LogicalKeySet, Intent>{
-        ...DefaultShortcuts().shortcuts,
+        ...Shortcuts.defaultShortcutsOf(context),
         LogicalKeySet(LogicalKeyboardKey.goBack): const ActivateIntent(),
       },
       builder: FlutterSmartDialog.init(
