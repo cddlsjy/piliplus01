@@ -110,8 +110,8 @@ class VideoCardV extends StatelessWidget {
               onSecondaryTap: PlatformUtils.isMobile ? null : onLongPress,
               canRequestFocus: true,
               child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
                 AspectRatio(
                   aspectRatio: Style.aspectRatio,
                   child: LayoutBuilder(

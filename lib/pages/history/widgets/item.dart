@@ -122,8 +122,8 @@ class HistoryItem extends StatelessWidget {
           onTap: onTapHandler,
           onLongPress: onLongPress,
           onSecondaryTap: PlatformUtils.isMobile ? null : onLongPress,
-        child: Stack(
-          clipBehavior: Clip.none,
+          child: Stack(
+            clipBehavior: Clip.none,
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(
