@@ -296,7 +296,6 @@ class MyApp extends StatelessWidget {
       getPages: Routes.getPages,
       defaultTransition: Pref.pageTransition,
       shortcuts: <LogicalKeySet, Intent>{
-        ...Shortcuts.defaultShortcutsOf(context),
         LogicalKeySet(LogicalKeyboardKey.goBack): const ActivateIntent(),
       },
       builder: FlutterSmartDialog.init(

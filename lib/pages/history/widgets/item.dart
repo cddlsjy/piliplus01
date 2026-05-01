@@ -126,13 +126,13 @@ class HistoryItem extends StatelessWidget {
             clipBehavior: Clip.none,
             children: [
               Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: Style.safeSpace,
-                vertical: 5,
-              ),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                padding: const EdgeInsets.symmetric(
+                  horizontal: Style.safeSpace,
+                  vertical: 5,
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
                   AspectRatio(
                     aspectRatio: Style.aspectRatio,
                     child: LayoutBuilder(
@@ -200,10 +200,10 @@ class HistoryItem extends StatelessWidget {
                   ),
                   const SizedBox(width: 10),
                   content(theme),
-                ],
+                  ],
+                ),
               ),
-            ),
-            Positioned(
+              Positioned(
               right: 12,
               bottom: 0,
               width: 29,
