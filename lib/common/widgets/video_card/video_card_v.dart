@@ -147,6 +147,7 @@ class VideoCardV extends StatelessWidget {
             ),
           ),
         ),
+        ),
         if (videoItem.goto == 'av')
           Positioned(
             right: -5,
