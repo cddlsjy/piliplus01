@@ -294,6 +294,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       getPages: Routes.getPages,
       defaultTransition: Pref.pageTransition,
+      shortcuts: <LogicalKeySet, Intent>{
+        ...DefaultWidgetsFlutterBinding.instance.defaultShortcuts,
+        LogicalKeySet(LogicalKeyboardKey.goBack): const ActivateIntent(),
+      },
       builder: FlutterSmartDialog.init(
         toastBuilder: (msg) => CustomToast(msg: msg),
         loadingBuilder: (msg) => LoadingWidget(msg: msg),
@@ -335,7 +339,7 @@ class MyApp extends StatelessWidget {
         child: child!,
       );
     }
-    if (PlatformUtils.isDesktop) {
+    if (PlatformUtils.isDesktop || Platform.isAndroid) {
       return BackDetector(
         onBack: _onBack,
         child: child,

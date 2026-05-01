@@ -151,7 +151,8 @@ abstract final class SettingBoxKey {
       showDynDispute = 'showDynDispute',
       touchSlopH = 'touchSlopH',
       floatingNavBar = 'floatingNavBar',
-      removeSafeArea = 'removeSafeArea';
+      removeSafeArea = 'removeSafeArea',
+      autoResumeLastVideo = 'autoResumeLastVideo';
 
   static const String minimizeOnExit = 'minimizeOnExit',
       windowSize = 'windowSize',

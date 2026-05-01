@@ -151,6 +151,13 @@ List<SettingsModel> get videoSettings => [
     setKey: SettingBoxKey.expandBuffer,
     defaultVal: false,
   ),
+  const SwitchModel(
+    title: '自动播放上次视频',
+    subtitle: '打开应用时自动恢复上次观看的视频',
+    leading: Icon(Icons.autorenew_outlined),
+    setKey: SettingBoxKey.autoResumeLastVideo,
+    defaultVal: false,
+  ),
   NormalModel(
     title: '自动同步',
     leading: const Icon(Icons.sync_rounded),
